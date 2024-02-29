@@ -1938,10 +1938,6 @@ html {
   margin-right: auto;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .grid {
   display: grid;
 }
@@ -1978,16 +1974,8 @@ html {
   gap: 1.5rem;
 }
 
-.rounded-box {
-  border-radius: var(--rounded-box, 1rem);
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .bg-base-100 {

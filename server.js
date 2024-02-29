@@ -34,11 +34,11 @@ app.use(express.static('public'));
 
 // Setting the routes
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/home.html"));
+    res.render("home");
 });
 
 app.get("/about", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/about.html"));
+    res.render("about");
 });
 
 app.get("/un/countries", (req, res) => {
@@ -74,7 +74,7 @@ app.get("/un/countries/region-demo", (req, res) => {
 });
 
 app.use((req, res) => {
-    res.status(404).sendFile(path.join(__dirname, "/views/404.html"));
+    res.render("404");
 });
 
 
