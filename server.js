@@ -45,11 +45,11 @@ app.get("/un/countries", (req, res) => {
     const { region } = req.query;
     if (region) {
         unCountriesData.getCountriesByRegion(region)
-            .then(countries => res.json(countries))
+            .then(countries => res.render("countries", {countries}))
             .catch(error => res.status(500).send(error));
     } else {
         unCountriesData.getAllCountries()
-            .then(allCountries => res.json(allCountries))
+            .then(allCountries => res.render("countries", {countries: allCountries}))
             .catch(error => res.status(500).send(error));
     }
 });
