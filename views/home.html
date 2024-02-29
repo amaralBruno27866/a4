@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style data-merge-styles="true"></style>
+    <style data-merge-styles="true"></style>
+    <style data-merge-styles="true"></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN Countries</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body tabindex="-1" cz-shortcut-listen="true">
+
+    <!-- Component NAV BAR -->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl" href="/">UN Member States</a>
+        </div>
+            <div class="navbar-center hidden sm:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="" href="/un/countries">All Countries</a></li>
+                    <li><a class="" href="/about">About</a></li>
+                    <li>
+                        <details>
+                            <summary>Region</summary>
+                            <ul class="p-2 bg-base-100 right-0">      
+                            <li><a class="" href="/un/countries?region=Africa">Africa</a></li>
+                            <li><a href="/un/countries?region=Americas">Americas</a></li>
+                            <li><a href="/un/countries?region=Asia">Asia</a></li>
+                            <li><a href="/un/countries?region=Europe">Europe</a></li>
+                            <li><a href="/un/countries?region=Oceania">Oceania</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Component main div -->
+    <div class="container mx-auto">
+
+        <!-- Component banner -->
+        <div class="hero bg-base-200 rounded-lg p-6">
+          <div class="hero-content text-center ">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold">Welcome</h1>
+    
+              <p class="py-6">This application provides information about the 193 member states of the United Nations. The followings are the five permanent members of the United Nations Security Council.</p>
+          
+              <a href="/un/countries" class="btn btn-primary">Get Started Now</a>
+            </div>
+          </div>
+        </div>
+    
+        <br>
+
+        <!-- Component GRID SYSTEM -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Cards​ Brazil -->
+            <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full" src="https://flagcdn.com/w320/br.png" alt="Brazil">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Brazil</h2>
+                        <p>Federative Republic of Brazil</p>
+                        <div class="card-actions justify-end">
+                            <a href="/un/countries/cn" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards​ Russian -->
+            <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full" src="https://flagcdn.com/w320/ru.png" alt="Russian">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Russian</h2>
+                        <p>Russian Federation</p>
+                        <div class="card-actions justify-end">
+                            <a href="/un/countries/cn" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards​ India -->
+            <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full" src="https://flagcdn.com/w320/in.png" alt="India">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">India</h2>
+                        <p>Republic of India</p>
+                        <div class="card-actions justify-end">
+                            <a href="/un/countries/cn" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards​ China -->
+            <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full" src="https://flagcdn.com/w320/cn.png" alt="UNSC Perm. Member - China">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">China</h2>
+                        <p>People's Republic of China</p>
+                        <div class="card-actions justify-end">
+                            <a href="/un/countries/cn" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards​ South Africa -->
+            <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full" src="https://flagcdn.com/w320/za.png" alt="South Africa">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">South Africa</h2>
+                        <p>Republic of South Africa</p>
+                        <div class="card-actions justify-end">
+                            <a href="/un/countries/cn" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>    
+</body>
+</html>
