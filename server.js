@@ -54,19 +54,19 @@ app.get("/un/countries", (req, res) => {
     }
 });
 
-app.get("/un/countries/countries-demo/:countryCode", (req, res) => {
+app.get("/un/countries/:countryCode", (req, res) => {
     const countryCode = req.params.countryCode;
     unCountriesData.getCountryByCode(countryCode)
     .then(country => {
         if (!country) {
             return res.status(404).send("Country not found");
         }
-        res.json(country);
+        res.render("country", {country: country});
     })
     .catch(error => res.status(404).send(error));
 });
 
-app.get("/un/countries/region-demo", (req, res) => {
+app.get("/un/countries/", (req, res) => {
     const region = "oceania";
     unCountriesData.getCountriesByRegion(region)
     .then(countries => res.json(countries))
