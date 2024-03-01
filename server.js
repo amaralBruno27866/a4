@@ -8,7 +8,7 @@
 *
 * Name: Bruno Amaral Student ID: 143766228 Date: March 01, 2024
 *
-* Published URL:
+* Published URL: https://tired-gold-lion.cyclic.app/
 *
 ********************************************************************************/
 
