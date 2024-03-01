@@ -59,11 +59,11 @@ app.get("/un/countries/:countryCode", (req, res) => {
     unCountriesData.getCountryByCode(countryCode)
     .then(country => {
         if (!country) {
-            return res.status(404).send("Country not found");
+            return res.status(404).render("404", {message: "I'm sorry, we're unable to find what you're looking for."});
         }
         res.render("country", {country: country});
     })
-    .catch(error => res.status(404).send(error));
+    .catch(error => res.status(404).render("404", {message: "An error occurred while trying to find the country"}));
 });
 
 app.get("/un/countries/", (req, res) => {
@@ -74,7 +74,7 @@ app.get("/un/countries/", (req, res) => {
 });
 
 app.use((req, res) => {
-    res.render("404");
+    res.status(404).render("404", {message: "I'm sorry, we're unable to find what you're looking for"});
 });
 
 
